@@ -3,7 +3,7 @@ Solid Mechanics Fast Multipole Method based on elastic Green's function and acce
 
 ## Installation
 
-1) Install miniconda or anaconda. Set up proxy in .condarc (in users folder under your profile)
+### 1. Install miniconda or anaconda. Set up proxy in .condarc (in users folder under your profile) 
    For Windows, it may be necessary to add proxy servers directly in Navigator under 
    File->Preferences->Configure Conda. Example .condarc for LANL win is below:
 
