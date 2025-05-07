@@ -7,10 +7,10 @@ Solid Mechanics Fast Multipole Method based on elastic Green's function and acce
    For Windows, it may be necessary to add proxy servers directly in Navigator under 
    File->Preferences->Configure Conda. Example .condarc for LANL win is below:
 
-channels:
-  - defaults
+### channels:
+###  - defaults
 
-auto_update_conda: false
+### auto_update_conda: false
 
 proxy servers:
       http: http://proxyout.lanl.gov:8080
