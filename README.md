@@ -76,26 +76,26 @@ Solid Mechanics Fast Multipole Method based on elastic Green's function and acce
     make openmp
     ```
 5. Run  
-    serial  
-    osx and linux:
-    ```
-    ./../src/FMM.out
-    ```
-    Win:
-    ```
-    ./../src/LS-EVPFFT.exe
-    ```
+    - serial:  
+      osx and linux:
+      ```
+      ./../src/FMM.out
+      ```
+      Win:
+      ```
+      ./../src/LS-EVPFFT.exe
+      ```
     
-    openmp version  
-    osx and linux:
-    ```
-    ./../src/FMM.out --nthreads n
-    ```
-    Win:
-    ```
-    ./../src/LS-EVPFFT.exe --nthreads n
-    ```
-    where n is number of threads.
+    - openmp version:  
+      osx and linux:
+      ```
+      ./../src/FMM.out --nthreads n
+      ```
+      Win:
+      ```
+      ./../src/LS-EVPFFT.exe --nthreads n
+      ```
+      where n is number of threads.
 
 
 
