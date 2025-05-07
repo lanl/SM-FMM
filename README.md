@@ -3,19 +3,39 @@ Solid Mechanics Fast Multipole Method based on elastic Green's function and acce
 
 ## Installation
 
-### 1. Install miniconda or anaconda. Set up proxy in .condarc (in users folder under your profile) 
+
+## Building LS-EVPFFT with Anaconda
+It is advised to use Anaconda package manager to build LS-EVPFFT as follows:
+
+1. Create an environment and activate:
+```
+conda create --name ls-evpfftEnv
+conda activate ls-evpfftEnv
+```
+
+2. Install needed packages:
+```
+conda install cxx-compiler -c conda-forge
+conda install cmake
+conda install "fftw=*=mpi_openmpi*" -c conda-forge
+conda install "hdf5=*=mpi_openmpi*" -c conda-forge
+conda install openmpi-mpicxx -c conda-forge 
+```
+
+
+1. Install miniconda or anaconda. Set up proxy in .condarc (in users folder under your profile) 
    For Windows, it may be necessary to add proxy servers directly in Navigator under 
    File->Preferences->Configure Conda. Example .condarc for LANL win is below:
+```
+channels:
+- defaults
 
-### channels:
-###  - defaults
-
-### auto_update_conda: false
+auto_update_conda: false
 
 proxy servers:
       http: http://proxyout.lanl.gov:8080
       https: https//proxyout.lanl.gov:8080
-
+```
 2) From anaconda prompt create enviroment and install packages 
    For osx:
 
