@@ -1,0 +1,29 @@
+! mesh file, texture (in periodic case grain id defined as mod(igr,ngr_per)), elastic props
+pre/n10-idnonper.vtk
+pre/tex_1000.in
+el.sx
+19 19 19             ! grid dimensions
+9 9 9             ! nbox per dimension
+-1                   ! id gas
+! applied strain
+-0.5e-3 0.0 0.0         
+0.0 -0.5e-3 0.0
+0.0 0.0 1.0e-3
+1.0 1              ! time inc, nincr
+! applied eigenstrain
+0                   ! eigenstrain_flag
+eigenstrain.in      
+! convergence
+0                   ! full convolution
+0                   ! load Gamma
+1                   ! Jacobi
+1.0                 ! xc0
+1.0                 ! step
+4                   ! order
+1                   ! FFT
+0                   ! periodic
+1.0e-3              ! Green's function cut off
+1.0e-3 100 2        ! tolerance, max iter, min
+5.0e-3 20 2.0e3 1.1  ! tolerance_out, itout_mx, k_penalty, k_penalty_incr
+2.0                 ! dx_th
+1 fcc 100000.0 10 0 ! plasticity, slip, tauc, rate_exp, nit_non_loc
