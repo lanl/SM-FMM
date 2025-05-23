@@ -1,0 +1,16 @@
+pre_px/microstr.dat
+pre_px/MAKE.IN
+el.sx                ! elastic props
+45 45 45            ! grid dimensions
+10  10  10             ! nbox per dimension
+! applied strain
+0.0 0.0 0.0         
+0.0 0.0 0.0
+0.0 0.0 1.0e-3
+1                   ! full convolution
+0                   ! load Gamma
+1                   ! Jacobi
+1.0                 ! xc0
+1.0                 ! step
+2                   ! order
+1                   ! FFT
