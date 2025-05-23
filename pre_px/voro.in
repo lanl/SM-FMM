@@ -1,0 +1,4 @@
+2000            !ngr
+45 45 45     !npts1,npts2,npts3
+1.0 1.0 1.0   !aspect
+2             !seed
